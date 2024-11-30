@@ -1,0 +1,78 @@
+@font-face {
+    font-family: Pacifico-Regular;
+    src: url(../fonts/Pacifico/Pacifico-Regular.ttf);
+}
+@font-face {
+    font-family: Righteous-Regular;
+    src: url(../fonts/Righteous-Regular.ttf);
+}
+body{
+    background-color: #F7ECDE;
+}
+h1{
+    font-size: 50px;
+    font-family: Pacifico-Regular;
+    color: #352e28;
+}
+h1::after{
+    content: '';
+    position: absolute;
+    background-color:#fec260;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    top: 60%;
+    z-index: -1;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+h1:hover::after{
+    top: 40%;
+}
+h2{
+    font-family: Righteous-Regular;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.form{
+    border: 2px black dotted !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+.btn-warning{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #d1512d;
+    --bs-btn-border-color: #d1512d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #bb4120;
+    --bs-btn-hover-border-color: #a03315;
+    --bs-btn-active-bg: white;
+    --bs-btn-active-border-color: black;
+}
+.btn-success{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #9eb23b;
+    --bs-btn-border-color: #9eb23b;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #8a9e23;
+    --bs-btn-hover-border-color: #6e8018;
+    --bs-btn-active-bg: white;
+    --bs-btn-active-border-color: black;
+    --bs-btn-active-color: black;
+}
+.btn-danger{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #eb1d36;
+    --bs-btn-border-color: #eb1d36;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d30820;
+    --bs-btn-hover-border-color: #ba081d;
+    --bs-btn-active-bg: white;
+    --bs-btn-active-border-color: black;
+    --bs-btn-active-color: black;
+}
